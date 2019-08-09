@@ -1,3 +1,5 @@
+# https://web-identity-federation-playground.s3.amazonaws.com/index.html
+
 import boto3
 
 client = boto3.client('sts')
