@@ -23,14 +23,14 @@ import sys # import module sys to get the type of exception
 
 aws_projects = { 
     "project-example-1": {
-        "dry_run_bool": "False", 
+        "dry_run_bool": "True", 
         "aws_region": "eu-west-2",
         "aws_profile_name": "project-1-profile-name-example", 
         "aws_ami_tag": "example-1-webserver", 
 
         },
     "project-example-2": {
-        "dry_run_bool": "False", 
+        "dry_run_bool": "True", 
         "aws_region": "eu-west-2",
         "aws_profile_name": "project-2-profile-name-example", 
         "aws_ami_tag": "example-2-webserver", 
