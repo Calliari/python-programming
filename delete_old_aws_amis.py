@@ -162,9 +162,9 @@ for key, value in aws_projects.items():
     # snapshots = ec2.snapshots.filter(Filters=[{'Name': 'tag:Name', 'Values': [aws_snapshot_tag]}])
 
 
-    # print('AWS-Profile-name: [%s] \nAWS-AMI-Tag: [%s] \nAWS-Region: [%s]\ndry_run_bool: [%s]\n' % (aws_profile_name, aws_ami_tag, aws_region, dry_run_bool))
-    # print('INFORMATION:\nImages that will NOT be deregistered (img in use) - %s \nImages that will NOT be deregistered (img to keep based on past days specifield) - %s \nImages that will NOT be deregistered (img from latest 3 deploys) - %s \nImages that will NOT be deregistered (total img) - %s \n' % (images_in_use_func(), keep_images_func(), latest_images_func(), images_to_keep_func(images_in_use_func(), keep_images_func(), latest_images_func())   ))
-    # print(deregister_images_func()) 
+    print('AWS-Profile-name: [%s] \nAWS-AMI-Tag: [%s] \nAWS-Region: [%s]\ndry_run_bool: [%s]\n' % (aws_profile_name, aws_ami_tag, aws_region, dry_run_bool))
+    print('INFORMATION:\nImages that will NOT be deregistered (img in use) - %s \nImages that will NOT be deregistered (img to keep based on past days specifield) - %s \nImages that will NOT be deregistered (img from latest 3 deploys) - %s \nImages that will NOT be deregistered (total img) - %s \n' % (images_in_use_func(), keep_images_func(), latest_images_func(), images_to_keep_func(images_in_use_func(), keep_images_func(), latest_images_func())   ))
+    print(deregister_images_func()) 
 
     ## for debugging
     # print('Images that will NOT be deregistered (img to keep based on past days specifield) - %s \n' % keep_images_func() )
