@@ -21,5 +21,6 @@ or
 # Install a module from another env use the requirement.txt file
 `pip install -r requirements.txt`
 
-
+# Unnstall modules using requirement.txt file
+`pip uninstall -r requirements.txt -y`
 
