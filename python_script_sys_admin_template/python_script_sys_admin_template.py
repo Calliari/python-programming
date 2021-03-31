@@ -41,7 +41,7 @@ parser.add_argument('--version', '-v', action='version', version='%(prog)s 1.0',
 def example_parser_argument_call():
     print('\n $ python3.7 python_script_sys_admin_template -a "test"\n')
 
-
+# Get the 'parser_dict' argument from the 'try-cactch & except' block
 def check_parser_argument(parser_dict):
         if parser_dict['first_arg'] == None:
             # print(parser_dict)
@@ -56,12 +56,13 @@ def check_parser_argument(parser_dict):
             print("\n...ERR You are passing an 'blank' required argument\n")
             parser.exit(1)
 
-
-
+# Keep the 'try-cactch & except' block small and tidy
 try:
     # taking all argumente frim this Object 'args'
-    # convert the 'Namespace' into var 'dict'
+    # convert the 'Namespace' into var which became 'dict'
     args = vars(parser.parse_args())
+    
+    # Calling a function 'check_parser_argument' passing the dictionary 'args' - check with 'print(args)'
     check_parser_argument(args)
 except argparse.ArgumentError:
      print('Catching an argumentError')
