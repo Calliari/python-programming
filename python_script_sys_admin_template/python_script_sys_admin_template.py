@@ -6,7 +6,7 @@
 # https://docs.python.org/3/library/argparse.html?highlight=parser --> (search for ArgumentParser objects, add_argument)
 import argparse
 
-# crating a parser Object from a ArgumentParser() class - Construct the argument parser
+# creating a parser Object from a ArgumentParser() class - Construct the argument parser
 parser = argparse.ArgumentParser()
 
 # using the parser Object with 'description' option
