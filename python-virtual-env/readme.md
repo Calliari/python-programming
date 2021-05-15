@@ -1,10 +1,10 @@
 # Create a local python environment
 `python3.7 -m venv ~/database-pg`
 
-# Acvate the env
+# Activate the env
 `source database-pg/bin/activate`
 
-# Deacvate the env
+# Dactivate the env
 `deactivate`
 or
 `database-pg/bin/deactivate` 
