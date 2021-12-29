@@ -6,6 +6,9 @@
 # https://docs.python.org/3/library/argparse.html?highlight=parser --> (search for ArgumentParser objects, add_argument)
 import argparse
 
+# variable version for the program
+program_version = '1.0'
+
 # creating a parser Object from a ArgumentParser() class - Construct the argument parser
 parser = argparse.ArgumentParser()
 
@@ -30,8 +33,8 @@ parser.add_argument('-s', action='store', dest='simple_value',
 parser.add_argument('--verbose', action='store_true',
                     help='verbose flag' )
 
-parser.add_argument('--version', '-v', action='version', version='%(prog)s 1.0',
-                    help="version of this script")
+parser.add_argument('--version', '-v', action='version', version='%(prog)s version ' + str(program_version),
+                    help='version of this %(prog)s program')
 
 
 # this call the '-h' flag
