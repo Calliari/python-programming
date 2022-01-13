@@ -3,19 +3,33 @@
 # references
 # https://github.com/linuxacademy/content-python-for-sys-admins
 
+
+__author__ = "author name"
+__copyright__ = "Copyright 2022, The test-scripr Project"
+__credits__ = ["credits to be given to"]
+__version__ = '1.0'
+__maintainer__ = "devOps team"
+__status__ = "non-production"
+
+import os
+
 # https://docs.python.org/3/library/argparse.html?highlight=parser --> (search for ArgumentParser objects, add_argument)
 import argparse
 
 # variable version for the program
-program_version = '1.0'
+program_version = __version__ 
+
 
 # creating a parser Object from a ArgumentParser() class - Construct the argument parser
 parser = argparse.ArgumentParser()
 
 # using the parser Object with 'description' option
 parser = argparse.ArgumentParser(description="""
-Template for creating python CLI scripts
-""")
+Automated test-script
+version: %s,
+status:  %s,
+maintainer: %s
+""" %(__version__,__status__,__maintainer__))
 
 # Add the arguments to the parser
 parser.add_argument("-a", "--first_arg", required=False,
@@ -77,3 +91,7 @@ example_parser_argument_call()
 
 
 # Printing the arguments
+
+# call the "__name__"
+# if __name__ == "__main__":
+#    main(sys.argv[1:])
