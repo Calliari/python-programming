@@ -3,18 +3,20 @@ import sys, io, time, itertools # for Py2.7 that would be import cStringIO as io
 
 
 to_do_task = u"""
-    - Clean up unused AWS resources - saving costs
-    - Increase disk partitions on the DEV and UAT servers
-    - Install anti-virus on All on-premiss servers --> 'URGENT'
-    - Create a new DEV website for a new project --> 'URGENT'
-    - Grant DATABASE access to a new dev trainee --> 'URGENT'
-    - Write a new python script to automate the CI/CD pipeline
-    - Translate a bash script into python for cross-platform benefits
-    - Architecting a better way for the developer to get a dump-prod-databases for local-software lifecycle
-    - Re-write Dockerfile for lightweight Docker images - improvements for containerization
+  - Replay to all emails...
+  - Clean up unused AWS resources - costs saving 
+  - Increase disk partitions on the DEV and UAT servers
+  - Install anti-virus on All on-premiss servers --> 'URGENT'
+  - Create a new DEV website for a new project --> 'URGENT'
+  - Grant DATABASE access to a new dev trainee --> 'URGENT'
+  - Write a new python script to automate the CI/CD pipeline
+  - Translate a Groovy code script into python for cross-platform benefits
+  - Architecting a better way for the developer to get a dump-prod-databases for local-software lifecycle
+  - Re-write Dockerfile code for lightweight Docker images - improvements for containerization
+  - Having fun with this code, 'this is not an actual thing on my todo list, it's just me being a software engineer and playing with code... lol :)'
 """
 
-to_do_list_task_time_done = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00']
+to_do_list_task_time_done = ['09:35', '10:50','11:55', '12:30', '13:45', '14:58', '15:47', '16:00', '17:35', '18:33']
 
 def to_do_list_today():
     # print('\n clean up AWS acc\n')
@@ -22,17 +24,17 @@ def to_do_list_today():
 
 to_do_list_today()
 
-for i in range(0,10):
+for i in range(0,7):
    time.sleep(1)
-   sys.stdout.write("working...")
+   sys.stdout.write("working... ")
    sys.stdout.flush()
+print('\n##################################################################\n')
 
 all_tasks = io.StringIO(to_do_task)
-print('\n\nMy to-do task list DONE today:\n')
+print('\nMy to-do task list DONE today:\n')
 next(all_tasks)
 for time_done_task, task in zip(to_do_list_task_time_done, all_tasks):
-    time.sleep(2)
     print('Done at ' + str(time_done_task) + task)
+    time.sleep(2)
 
-
-print('Done for the day!!!')
+print("Let's call it a day and get out of here!!!\n")
