@@ -22,16 +22,17 @@ def to_do_list_today():
 
 to_do_list_today()
 
-for i in range(0,20):
+for i in range(0,10):
    time.sleep(1)
-   sys.stdout.write("==")
+   sys.stdout.write("working...")
    sys.stdout.flush()
 
 all_tasks = io.StringIO(to_do_task)
-print('\nMy to-do task list DONE today:\n')
+print('\n\nMy to-do task list DONE today:\n')
 next(all_tasks)
 for time_done_task, task in zip(to_do_list_task_time_done, all_tasks):
     time.sleep(2)
     print('Done at ' + str(time_done_task) + task)
-    
-    
+
+
+print('Done for the day!!!')
