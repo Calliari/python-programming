@@ -1,4 +1,4 @@
-# Create a local python environment
+### Create a local python environment
 `python3.7 -m venv ~/database-pg`
 
 # Activate the env
