@@ -21,6 +21,7 @@ A 'Pipfile' will be created with details about the project
 `pipenv install`
 
 <hr>
+
 ### Another  way of working with python environments
 #### Create a project dir 
 `mkdir database-proj; cd database-proj`
