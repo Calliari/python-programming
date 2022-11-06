@@ -6,7 +6,7 @@
 
 ### Create the pipenv env
 `pipenv --python python3.7`
-A 'Pipfile' will be create with details about the project
+A 'Pipfile' will be created with details about the project
 
 ### Activate the env 
 `pipenv shell`
