@@ -2,8 +2,7 @@
 `pip3.7 install --user pipenv`
 
 ### Create a project dir 
-`mkdir database-proj`
-`cd database-proj`
+`mkdir database-proj`; `cd database-proj`
 
 ### Create the pipenv env
 `pipenv --python python3.7`
