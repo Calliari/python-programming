@@ -11,7 +11,7 @@ A 'Pipfile' will be created with details about the project
 ### Activate the env 
 `pipenv shell`
 
-### Install modules (the modiles will be save in the Pipfile - good to recreate the env )
+### Install modules (the modules will be save in the Pipfile - good to recreate the env later if need)
 `pipenv install psycopg2`
 
 ### Deactivate the pipenv type - 'exit' or the old way 'deactivate'
